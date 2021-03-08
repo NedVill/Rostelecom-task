@@ -1,0 +1,60 @@
+.board {
+
+    &-info {
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+        visibility: hidden;
+        transition-duration: 0.6s;
+        transition-timing-function: cubic-bezier(.49,.31,.11,1);
+        z-index: 5;
+
+        &--active {
+            transform: translateX(-100%);
+            visibility: visible;
+        }
+
+        &__header {
+            position: relative;
+            padding: 10px 15px;
+            border-bottom: 1px solid lightgray;
+        }
+
+        &__close {
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+        }
+    }
+
+    &-users {
+        padding: 20px 15px;
+    }
+
+    &-user {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &__picture {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__name {
+            margin-left: 10px;
+        }
+    }
+}
