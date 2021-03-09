@@ -18,5 +18,9 @@
         &::-webkit-scrollbar-thumb {
             background-color: #bcdde6;
         }
+
+        @media (max-width: 480px) {
+            height: calc(100vh - 100px);
+        }
     }
 }
